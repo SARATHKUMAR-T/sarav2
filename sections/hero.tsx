@@ -9,7 +9,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[calc(80vh-64px)]">
+    <section className="relative min-h-[calc(80vh-64px)] px-6">
       <h1 className="text-center mt-48 ">
         <span>Your Motivation</span>
         <span className="block mt-2">as a Service</span>

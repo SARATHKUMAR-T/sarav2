@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { ArrowBigDown, Webhook } from "lucide-react";
 
 const homeRoutes = [
   {
@@ -23,7 +24,7 @@ const homeRoutes = [
 
 function NavBar() {
   return (
-    <nav className="fixed top-0 pt-5 left-0 h-16  right-0 flex items-center justify-between px-10">
+    <nav className="fixed z-50 top-0 pt-5 left-0 h-16  right-0 flex items-center justify-between px-10">
       <Button asChild variant="link" className="text-xl">
         <Link href="#home">Quotes.io</Link>
       </Button>
@@ -38,8 +39,13 @@ function NavBar() {
         </li>
       </ul>
       <div className="space-x-3">
-        <Button variant="link">Login</Button>
-        <Button variant="outline">Signup</Button>
+        <Button variant="link" asChild>
+          <Link href="">
+            My Resume
+            <Webhook className="ml-1" />
+          </Link>
+        </Button>
+        <Button variant="outline">Hire Me</Button>
       </div>
     </nav>
   );
