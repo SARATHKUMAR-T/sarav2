@@ -5,9 +5,9 @@ import { PlusCircle } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className=" overflow-hidden">
+    <main className=" overflow-hidden ">
       <Hero />
-      <About />
+      {/* <About /> */}
     </main>
   );
 }

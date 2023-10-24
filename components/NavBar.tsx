@@ -2,19 +2,20 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { ArrowBigDown, Webhook } from "lucide-react";
+import { ModeToggle } from "./ToggleButton";
 
 const homeRoutes = [
-  {
-    label: "Home",
-    href: "#home",
-  },
   {
     label: "About",
     href: "#about",
   },
   {
-    label: "FAQ",
-    href: "#faq",
+    label: "Skills",
+    href: "#skills",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
   },
   {
     label: "Contact",
@@ -25,24 +26,30 @@ const homeRoutes = [
 function NavBar() {
   return (
     <nav className="fixed z-50 top-0 pt-5 left-0 h-16  right-0 flex items-center justify-between px-10">
-      <Button asChild variant="link" className="text-xl">
-        <Link href="#home">Quotes.io</Link>
+      <Button asChild variant="link" className="text-xl text-inherit">
+        <Link href="#home">Sarath.dev</Link>
       </Button>
       <p></p>
-      <ul className="">
+      <ul>
         <li className=" space-x-5">
           {homeRoutes.map(route => (
-            <Button variant="link" key={route.label} asChild>
+            <Button
+              variant="link"
+              className="dark:text-slate-100"
+              key={route.label}
+              asChild
+            >
               <Link href={route.href}>{route.label}</Link>
             </Button>
           ))}
         </li>
       </ul>
-      <div className="space-x-3">
-        <Button variant="link" asChild>
+      <div className="space-x-3 flex items-center">
+        <ModeToggle />
+        <Button className="text-inherit" variant="link" asChild>
           <Link href="">
             My Resume
-            <Webhook className="ml-1" />
+            <Webhook className="ml-1 " />
           </Link>
         </Button>
         <Button variant="outline">Hire Me</Button>
