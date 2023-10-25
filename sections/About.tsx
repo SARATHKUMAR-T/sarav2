@@ -1,3 +1,4 @@
+import ThinkSVG from "@/components/ThinkSVG";
 import {
   Card,
   CardContent,
@@ -23,8 +24,11 @@ const aboutCard = [
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center w-full max-w-full ">
-      <div className="w-[45%] flex flex-col  justify-around ml-8 py-4 h-[80vh] mt-8 relative">
+    <section
+      id="about"
+      className="min-h-screen flex flex-col py-40 md:flex-row items-center w-full max-w-full "
+    >
+      <div className="w-[45%] bg-green-200 order-2 md:order-1 flex flex-col  justify-around ml-8 py-4 h-[80vh]  relative">
         {aboutCard.map((item, i) => (
           <Card
             key={i}
@@ -44,10 +48,11 @@ export default function About() {
 
         <div className="-z-10 absolute bottom-0 -left-[40%] h-full w-full  bg-slate-200 rounded-full" />
       </div>
-      <div className="flex-1 flex flex-col gap-12 h-[70vh]">
-        <div className="flex items-center gap-1">
+      <div className="flex-1 bg-blue-200 order-1 md:order-2  flex flex-col gap-12 h-[80vh]">
+        <div className="flex items-center gap-2">
           <div className="w-20 h-1 bg-black " />
-          <h2 className="text-xl uppercase">About us</h2>
+          <h2 className="text-xl uppercase">Who am I </h2>
+          <ThinkSVG />
         </div>
         <h2 className="text-5xl ">
           We are the best
@@ -55,7 +60,6 @@ export default function About() {
           in your city
         </h2>
       </div>
-      <div className="">3</div>
     </section>
   );
 }

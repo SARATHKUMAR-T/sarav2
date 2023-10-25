@@ -4,7 +4,7 @@ const TextAnimation = () => {
   const text2 = "WEB DEVELOPER";
 
   return (
-    <div className="text-center pt-36">
+    <div className="text-center pt-14 md:pt-36">
       <motion.p
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
@@ -12,7 +12,7 @@ const TextAnimation = () => {
       >
         SARATH KUMAR
       </motion.p>
-      <h1 className="font-extrabold">
+      <h1 className="font-extrabold text-5xl sm:text-7xl">
         {text2.split("").map((char, index) => (
           <motion.span
             key={index}

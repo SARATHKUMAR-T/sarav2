@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { ArrowBigDown, Webhook } from "lucide-react";
 import { ModeToggle } from "./ToggleButton";
+import { motion as m } from "framer-motion";
 
 const homeRoutes = [
   {
@@ -25,7 +27,15 @@ const homeRoutes = [
 
 function NavBar() {
   return (
-    <nav className="fixed z-50 top-0 pt-5 left-0 h-16  right-0 flex items-center justify-between px-10">
+    <m.nav
+      initial={{ opacity: 0, y: -200 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, ease: "backInOut" },
+      }}
+      className="hidden md:flex fixed  bg-opacity-50 bg-transparent backdrop-blur-lg z-50 top-0  left-0 h-16 pb-2 right-0  items-end justify-between px-10"
+    >
       <Button asChild variant="link" className="text-xl text-inherit">
         <Link href="#home">Sarath.dev</Link>
       </Button>
@@ -54,7 +64,7 @@ function NavBar() {
         </Button>
         <Button variant="outline">Hire Me</Button>
       </div>
-    </nav>
+    </m.nav>
   );
 }
 
