@@ -21,15 +21,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="z-0 relative max-w-full w-full   min-h-screen px-6"
+      className="z-0 pb-24 relative max-w-full w-full   min-h-screen px-6"
     >
       <div>
-        {/* <m.h1
-          variants={textvariants}
-          initial="initial"
-          animate="animate"
-          className="text-center pt-32 "
-        >
+        {/* <m.h1 className="text-center pt-32 ">
           <span>Your Motivation</span>
           <span className="block mt-2">as a Service</span>
         </m.h1> */}
@@ -59,7 +54,7 @@ export default function Hero() {
       <div className=" flex flex-col sm:flex-row sm:flex-wrap  sm:justify-center lg:justify-around  min-h-[40vh] h-full    mt-8 max-w-full w-full px-8 gap-2">
         <Card className=" min-w-[14rem] w-full sm:w-max    self-end   bg-blue-200 dark:bg-slate-700  ">
           <CardHeader className="text-sm  font-bold pb-4">
-            Visit my Linkedin Profile !
+            Checkout my Linkedin Profile
           </CardHeader>
           <CardContent>
             <Link href="#" className="">

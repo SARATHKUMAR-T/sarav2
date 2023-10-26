@@ -7,10 +7,12 @@
       "default",
       {
         "ignore": [
-          "@layer"
+          "@layer",
+          "-webkit-text-size-adjust"
         ]
       }
-    ]
+    ],
+    "typescript-config/is-valid": "off"
   },
   "browserslist": [
     "defaults",

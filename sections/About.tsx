@@ -1,24 +1,20 @@
-import ThinkSVG from "@/components/ThinkSVG";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import React from "react";
 
-const aboutCard = [
+const about = [
   {
-    heading: "professional support",
-    desec: "world class standard tech support.enquiry,maintanence.",
+    heading: "Who Am I..?",
+    desec:
+      "im a software dveleoper skilled in mernstack.proficent in mongodb,expressjs,nodejs,reactjs.very enthisatic person.",
   },
   {
-    heading: "professional support",
-    desec: "world class standard tech support.enquiry,maintanence.",
+    heading: "What I Do..?",
+    desec:
+      "i make websites ofcourse beautiful and robust too. Skilled in nextjs and express js. can create very user intuitive websites and maintain consisten codes.",
   },
   {
-    heading: "professional support",
-    desec: "world class standard tech support.enquiry,maintanence.",
+    heading: "What You Can Expect..?",
+    desec: "Good and robust work from me. trustable and hord working person.",
   },
 ];
 
@@ -26,39 +22,37 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col py-40 md:flex-row items-center w-full max-w-full "
+      className="min-h-screen flex  justify-center flex-col max-w-full py-16 "
     >
-      <div className="w-[45%] bg-green-200 order-2 md:order-1 flex flex-col  justify-around ml-8 py-4 h-[80vh]  relative">
-        {aboutCard.map((item, i) => (
-          <Card
-            key={i}
-            className="h-28 w-64 relative bg-black rounded-sm text-white "
-          >
-            <div className="absolute text-muted-foreground text-3xl font-bold -top-6 left-2">
-              {i + 1}
-            </div>
-            <CardHeader className="pb-2 text-sm font-semibold capitalize">
-              {item.heading}
-            </CardHeader>
-            <CardContent className="mt-0 ">
-              <CardDescription className="mt-0">{item.desec}</CardDescription>
-            </CardContent>
-          </Card>
-        ))}
-
-        <div className="-z-10 absolute bottom-0 -left-[40%] h-full w-full  bg-slate-200 rounded-full" />
+      <div className="flex items-center mt-24 mx-auto ">
+        <div className="w-24 h-1 bg-slate-900" />
+        <h3 className="text-lg">About me</h3>
       </div>
-      <div className="flex-1 bg-blue-200 order-1 md:order-2  flex flex-col gap-12 h-[80vh]">
-        <div className="flex items-center gap-2">
-          <div className="w-20 h-1 bg-black " />
-          <h2 className="text-xl uppercase">Who am I </h2>
-          <ThinkSVG />
+      <div className="w-full max-w-full sm:max-w-5xl flex flex-col md:flex-row mx-auto h-[80vh] mt-10">
+        <div className="w-full mx-auto md:max-w-[50%] justify-center  items-center p-14  flex space-x-1  ">
+          <div className="w-[50%]  flex flex-col justify-end p-2  h-full ">
+            <Card className=" border-0 h-56 mb-4  grayscale  bg-[url('/assets/github.jpg')]  w-full bg-cover bg-top " />
+            <Card className=" border-0  h-56  grayscale  bg-[url('/assets/github.jpg')]  w-full bg-cover bg-top " />
+          </div>
+          <div className="w-[50%]  flex flex-col justify-start  p-2  h-full ">
+            <Card className=" border-0 h-56 mb-4  grayscale  bg-[url('/assets/github.jpg')]  w-full bg-cover bg-top " />
+            <Card className=" border-0  h-56  grayscale  bg-[url('/assets/github.jpg')]  w-full bg-cover bg-top " />
+          </div>
         </div>
-        <h2 className="text-5xl ">
-          We are the best
-          <br />
-          in your city
-        </h2>
+        <div className="w-full md:w-[50%] p-5  flex items-center justify-center">
+          <div className="  mx-auto flex p-2 flex-col gap-14">
+            {about.map((item, i) => (
+              <div key={i}>
+                <h3 className="font-bold text-center md:text-start">
+                  {item.heading}
+                </h3>
+                <p className="max-w-full text-center md:text-start">
+                  {item.desec}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
