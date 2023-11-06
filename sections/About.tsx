@@ -28,7 +28,7 @@ export default function About() {
         <div className="w-24 h-1 bg-slate-900" />
         <h3 className="text-lg">About me</h3>
       </div>
-      <div className="w-full max-w-full sm:max-w-5xl flex flex-col md:flex-row mx-auto h-[80vh] mt-10">
+      <div className="w-full max-w-full sm:max-w-5xl flex flex-col md:flex-row mx-auto min-h-[80vh] mt-10">
         <div className="w-full mx-auto md:max-w-[50%] justify-center  items-center p-14  flex space-x-1  ">
           <div className="w-[50%]  flex flex-col justify-end p-2  h-full ">
             <Card className=" border-0 h-56 mb-4  grayscale  bg-[url('/assets/github.jpg')]  w-full bg-cover bg-top " />
