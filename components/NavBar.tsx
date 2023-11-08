@@ -39,7 +39,6 @@ function NavBar() {
       <Button asChild variant="link" className="text-xl text-inherit">
         <Link href="#home">Sarath.dev</Link>
       </Button>
-      <p></p>
       <ul>
         <li className=" space-x-5">
           {homeRoutes.map(route => (
@@ -56,10 +55,10 @@ function NavBar() {
       </ul>
       <div className="space-x-3 flex items-center">
         <ModeToggle />
-        <Button className="text-inherit" variant="link" asChild>
+        <Button className="text-inherit " variant="link" asChild>
           <Link href="">
             My Resume
-            <Webhook className="ml-1 " />
+            <Webhook className="ml-1 hover:animate-spin" />
           </Link>
         </Button>
         <Button variant="outline">Hire Me</Button>
