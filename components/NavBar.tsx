@@ -34,13 +34,17 @@ function NavBar() {
         y: 0,
         transition: { duration: 1, ease: "backInOut" },
       }}
-      className="hidden md:flex fixed  bg-opacity-50 bg-transparent backdrop-blur-lg z-50 top-0  left-0 h-16 pb-2 right-0  items-end justify-between px-10"
+      className="hidden sm:flex fixed  bg-opacity-50 bg-transparent backdrop-blur-lg z-50 top-0  left-0 h-16 pb-2 right-0  items-end justify-between px-4 md:px-10"
     >
-      <Button asChild variant="link" className="text-xl text-inherit">
+      <Button
+        asChild
+        variant="link"
+        className="hidden md:inline-block text-xl text-inherit"
+      >
         <Link href="#home">Sarath.dev</Link>
       </Button>
       <ul>
-        <li className=" space-x-5">
+        <li className="space-x-2 md:space-x-5">
           {homeRoutes.map(route => (
             <Button
               variant="link"
@@ -53,15 +57,21 @@ function NavBar() {
           ))}
         </li>
       </ul>
-      <div className="space-x-3 flex items-center">
+      <div className="space-x-1 md:space-x-3 flex items-center">
         <ModeToggle />
         <Button className="text-inherit " variant="link" asChild>
-          <Link href="">
+          <Link
+            target="_blank"
+            rel="noreferror"
+            href="https://drive.google.com/file/d/17Dey8mDvQDky9eIseSyPpm1Y933nZsCb/view?usp=sharing"
+          >
             My Resume
             <Webhook className="ml-1 hover:animate-spin" />
           </Link>
         </Button>
-        <Button variant="outline">Hire Me</Button>
+        <Button variant="outline">
+          <Link href="#contact">Hire Me</Link>
+        </Button>
       </div>
     </m.nav>
   );

@@ -98,7 +98,7 @@ export default function Contact() {
       id="contact"
       className="min-h-screen bg-[url('/assets/78786.jpg')] dark:bg-[url('/assets/darkcity.jpg')]    sm:bg-cover bg-center max-w-full p-4 pb-28"
     >
-      <h2 className="pt-28 capitalize text-3xl font-bold text-center">
+      <h2 className="pt-28 capitalize text-3xl text-transparent  bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text font-bold text-center">
         Get in touch
       </h2>
       <p className="max-w-xl text-sm  mt-2 mx-auto text-center">

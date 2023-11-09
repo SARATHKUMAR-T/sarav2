@@ -26,7 +26,9 @@ export default function About() {
     >
       <div className="flex items-center mt-24 mx-auto ">
         <div className="w-24 h-1 bg-slate-900" />
-        <h3 className="text-lg">About me</h3>
+        <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text">
+          About me
+        </h3>
       </div>
       <div className="w-full max-w-full sm:max-w-5xl flex flex-col md:flex-row mx-auto min-h-[80vh] mt-10">
         <div className="w-full mx-auto md:max-w-[50%] justify-center  items-center p-14  flex space-x-1  ">
