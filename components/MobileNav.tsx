@@ -1,4 +1,4 @@
-import { Home, Webhook } from "lucide-react";
+import { Home, Settings2, StretchHorizontal, Webhook } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "./ToggleButton";
@@ -12,12 +12,12 @@ const routes = [
   {
     label: "Skills",
     link: "#skills",
-    icon: <Home />,
+    icon: <Settings2 />,
   },
   {
     label: "Projects",
     link: "#projects",
-    icon: <Home />,
+    icon: <StretchHorizontal />,
   },
 ];
 
