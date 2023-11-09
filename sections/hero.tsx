@@ -91,7 +91,7 @@ export default function Hero() {
             </Link>
           </div>
         </Card>
-        <Card className="w-52 h-60 bg-[url('/assets/sarath.jpg')] bg-cover bg-center grayscale"></Card>
+        <Card className="w-52 h-60 bg-[url('/assets/man1.jpg')] bg-cover bg-center "></Card>
         <Card className="w-52 h-60 bg-[url('/assets/think.jpg')] bg-center overflow-hidden bg-cover">
           <div className=" bg-opacity-40 flex items-end bg-black p-2 h-full">
             <h2 className="text-2xl font-bold bg-gradient-to-r from-[#E0EAFC] to-[#fff] text-transparent bg-clip-text ">

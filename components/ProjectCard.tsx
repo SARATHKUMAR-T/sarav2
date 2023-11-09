@@ -34,7 +34,9 @@ export default function ProjectCard({ projects }: any) {
           <div className="flex mt-8 items-center gap-2">
             {projects.tech.map((tech: string, i: number) => (
               <div className="flex gap-2 items-center" key={i}>
-                <p>{tech}</p>
+                <p className="text-transparent bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text">
+                  {tech}
+                </p>
                 <div className="h-4 w-1 bg-blue-600" />
               </div>
             ))}
