@@ -33,6 +33,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { stringify } from "querystring";
 import { useToast } from "@/components/ui/use-toast";
 import { useRouter } from "next/navigation";
+import { motion as m } from "framer-motion";
 
 // form schema for login
 const formSchema = z.object({
@@ -94,7 +95,14 @@ export default function Contact() {
   }
 
   return (
-    <footer
+    <m.footer
+      animate={{ y: "0%" }}
+      exit={{ opacity: 1 }}
+      initial={{ y: "100%" }}
+      transition={{
+        duration: 0.75,
+        ease: "easeOut",
+      }}
       id="contact"
       className="min-h-screen bg-[url('/assets/78786.jpg')] dark:bg-[url('/assets/darkcity.jpg')]    sm:bg-cover bg-center max-w-full p-4 pb-28"
     >
@@ -234,6 +242,6 @@ export default function Contact() {
           </Form>
         </div>
       </Card>
-    </footer>
+    </m.footer>
   );
 }

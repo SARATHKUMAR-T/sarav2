@@ -6,7 +6,7 @@ import Hero from "@/sections/hero";
 
 export default function Home() {
   return (
-    <main className=" overflow-hidden ">
+    <main className=" overflow-hidden scroll-smooth ">
       <Hero />
       <About />
       <Skills />
