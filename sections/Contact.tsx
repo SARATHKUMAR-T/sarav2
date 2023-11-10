@@ -106,63 +106,69 @@ export default function Contact() {
         hight-authority links to each asset,paving the way for you
         rankings,improve brand.
       </p>
-      <Card className="max-w-4xl  flex flex-col sm:flex-row  mx-auto mt-16 p-2">
-        <Card className="w-full  sm:w-96 shrink-0 space-y-7 p-6 ">
+      <Card className="max-w-4xl bg-slate-100 dark:bg-background   flex flex-col sm:flex-row  mx-auto mt-12 p-2">
+        <Card className="w-full text-white bg-[url('/assets/space.jpg')] bg-center bg-cover  sm:w-96 shrink-0 space-y-5 p-6 ">
           <h4>Contact information</h4>
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-200 p-2 rounded-xl">
+          <Card className="flex hover:scale-105 duration-500  hover:-skew-x-3 cursor-pointer text-white rounded-2xl p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 items-center gap-3">
+            <div className="bg-blue-700 p-2 rounded-xl">
               <LinkedinIcon className="h-8 w-8" />
             </div>
             <Link
               href="https://www.linkedin.com/in/sarathfsd/"
               target="_blank"
               rel="noreferror"
+              className="text-sm"
             >
               www.linkedin.com/in/sarathfsd
             </Link>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-200 p-2 rounded-xl">
+          </Card>
+          <Card className="text-white  hover:scale-105 duration-500  hover:-skew-x-3 cursor-pointer rounded-2xl p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 flex items-center gap-3">
+            <div className="bg-rose-700 p-2 rounded-xl">
               <Github className="h-8 w-8" />
             </div>
             <Link
               href="https://github.com/SARATHKUMAR-T"
               target="_blank"
               rel="noreferror"
+              className="text-sm"
             >
               github.com/SARATHKUMAR-T
             </Link>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-200 p-2 rounded-xl">
+          </Card>
+          <Card className="text-white  hover:scale-105 duration-500  hover:-skew-x-3 cursor-pointer rounded-2xl p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 flex items-center gap-3">
+            <div className="bg-sky-700 p-2 rounded-xl">
               <BookOpenText className="h-8 w-8" />
             </div>
             <Link
               href="https://drive.google.com/file/d/17Dey8mDvQDky9eIseSyPpm1Y933nZsCb/view?usp=sharing"
               target="_blank"
               rel="noreferror"
+              className="text-sm"
             >
               drive.google.com/sarath_resume
             </Link>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-200 p-2 rounded-xl">
+          </Card>
+          <Card className="text-white  hover:scale-105 duration-500  hover:-skew-x-3 cursor-pointer rounded-2xl p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 flex items-center gap-3">
+            <div className="bg-green-700 p-2 rounded-xl">
               <Mail className="h-8 w-8" />
             </div>
             <Link
               href="mailto:sarathkumartk98@gmail.com"
               target="_blank"
               rel="noreferror"
+              className="text-sm"
             >
               sarathkumartk98@gmail.com
             </Link>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-200 p-2 rounded-xl">
+          </Card>
+          <Card className="text-white  hover:scale-105 duration-500  hover:-skew-x-3 cursor-pointer rounded-2xl p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 flex items-center gap-3">
+            <div className="bg-orange-700 p-2 rounded-xl">
               <MapPin className="h-8 w-8" />
             </div>
-            <Link href="#">Tiruchirappalli,TN</Link>
-          </div>
+            <Link href="#" className="text-sm">
+              Tiruchirappalli,TN
+            </Link>
+          </Card>
         </Card>
         <div className="w-full p-4">
           <Form {...form}>

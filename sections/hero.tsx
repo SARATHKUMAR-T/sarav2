@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="p-4 flex flex-col  md:flex-row h-full md:h-full mb-3   w-full">
+      <div className="p-4 flex mt-6 md:mt-0 items-center flex-col  md:flex-row h-full md:h-full mb-3   w-full">
         <div className="w-[25%] mx-auto min-w-[20rem] shrink-0">
           <Card className="w-[60%] mx-auto h-28 mb-20 md:mb-0 relative">
             <Card className="absolute flex justify-between flex-col w-[105%] h-36 -left-[56%] top-2 translate-x-[50%] z-10">
@@ -46,13 +46,13 @@ export default function Hero() {
           </Card>
         </div>
         <div className="flex-1">
-          <p className="text-center">
+          <p className="text-center text-sm sm:text-md md:text-lg">
             Discover the web through my lens—I'm{" "}
-            <span className="uppercase text-xl text-transparent font-bold dark:text-white bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]  bg-clip-text">
+            <span className="uppercase text-lg sm:text-xl text-transparent font-bold dark:text-white bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]  bg-clip-text">
               Sarath Kumar T
             </span>
-            , a proud GUVI and <br /> IIT-M certified MERNstack developer based
-            in Trichy. I infuse each line of code with passion, precision, and a
+            , a proud GUVI and IIT-M certified MERNstack developer based in
+            Trichy. I infuse each line of code with passion, precision, and a
             touch of innovation
           </p>
           <div className="flex gap-3 items-center justify-center mt-4">
@@ -101,7 +101,7 @@ export default function Hero() {
         </Card>
         <div className="w-52 h-60">
           <Card className="h-[50%] bg-slate-700 flex items-center justify-center ">
-            <CardHeader className="uppercase text-xl text-transparent font-bold bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text">
+            <CardHeader className="uppercase text-lg text-transparent font-bold bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text">
               Github STATS
             </CardHeader>
           </Card>
