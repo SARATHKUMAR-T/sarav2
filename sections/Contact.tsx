@@ -109,11 +109,7 @@ export default function Contact() {
       <h2 className="pt-28 capitalize text-3xl text-transparent  bg-gradient-to-r from-[#ec008c] to-[#fc6767]  bg-clip-text font-bold text-center">
         Get in touch
       </h2>
-      <p className="max-w-xl text-sm  mt-2 mx-auto text-center">
-        we'll create high quality linkable content and build at least 40
-        hight-authority links to each asset,paving the way for you
-        rankings,improve brand.
-      </p>
+
       <Card className="max-w-4xl bg-slate-100 dark:bg-background   flex flex-col sm:flex-row  mx-auto mt-12 p-2">
         <Card className="w-full text-white bg-[url('/assets/space.jpg')] bg-center bg-cover  sm:w-96 shrink-0 space-y-5 p-6 ">
           <h4>Contact information</h4>
