@@ -35,7 +35,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { useRouter } from "next/navigation";
 import { motion as m } from "framer-motion";
 
-// form schema for login
+// form schema for contact
 const formSchema = z.object({
   email: z.string().email({
     message: "Invalid email address.",
